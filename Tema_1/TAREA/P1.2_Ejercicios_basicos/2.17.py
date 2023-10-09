@@ -3,5 +3,6 @@ imprima por pantalla en líneas distintas el nombre del usuario tantas veces com
 nombre = str(input("Introduce tu nombre: "))
 numero_veces = int(input("Introduce el numero de veces que quieres ver tu nombre: "))
 
-for i in range(1,numero_veces+1):
-    print(nombre)
+nombre = nombre + "\n"
+
+print(f"{nombre * numero_veces}")
