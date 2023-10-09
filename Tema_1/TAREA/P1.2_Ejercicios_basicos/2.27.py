@@ -5,7 +5,7 @@ enteros y 2 decimales, el número de unidades con tres dígitos y el coste total
 nombre_producto = str(input("Introduce el nombre del articulo: "))
 precio = float(input("Introduce su precio: "))
 unidades = int(input("Cuantas unidades necesitas?: "))
-unidades_formateadas = "{:03d}".format(unidades)
+unidades_formateadas = "{:03f}".format(unidades)
 precio_formateado = "{:06.2f}€".format(precio)
 coste_total = "{:08.2f}€".format(precio * unidades)
 
