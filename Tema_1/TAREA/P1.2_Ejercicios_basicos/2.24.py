@@ -9,3 +9,11 @@ euros = precio_formateado[:decimales]
 centimos = precio_formateado[decimales + 1:]
 
 print(f"El precio fraccionado es de: {euros} euros y {centimos} centimos.")
+
+"""
+precio = str(precio).split(".")    
+precio[0] -> euros
+precio[1] -> centimos
+#EL PRECIO SE CONVIERTE EN UNA LISTA, LA IMPRIMIRLA SALDRA EN TERMINAL DE LA SIGUIENTE FORMA:
+["Euros", "Centimos"]
+"""

@@ -7,40 +7,47 @@ El pseudocódigo debes incluirlo como comentarios en el programa de Python."""
 
 """PSEUDOCÓDIGO:
 Inicio
+
     Lee numero1
     Lee numero2 
     
     Si (numero1 == numero2) entonces
         Escribe "Los números no pueden ser iguales" 
         
-        
+    cantidad_numeros = numero1 - numero2    
+
     Si (numero1 != numero2) entonces
-        ////
-        contador = 0
-        Para numero en (numero1..numero2) entonces
-            contador = contador + 1
-        ////
-        cantidad_numeros = numero1 - numero2
         Si (numero1 > numero2) entonces
             Escribe numero1 + " es mayor que " + numero2 + " y entre ellos existen " + contador + " números enteros."
-            Sino
+        Sino
             Escribe numero1 + " es menor que " + numero2 + " y entre ellos existen " + contador + " números enteros."
+            
 Fin
 """
-#Leo los dos números necesarios para el programa:
+#Código con el Pseudocódigo comentado:
+
+#Inicio
+#Lee numero1
 numero1 = int(input("Introduce un número entero: "))
+#Lee numero2 
 numero2 = int(input("Introduce otro número entero: "))
 
-#Vamos a escribir un mensaje si los dos números introducidos son iguales:
+#cantidad_numeros = numero1 - numero2 
+cantidad_numeros = abs(numero1 - numero2)
+
+#Si (numero1 != numero2) entonces
 if (numero1 == numero2) :
+    #Escribe "Los números no pueden ser iguales" 
     print("Los números no pueden ser iguales.")
 
-#Si los números son distintos, vamos a contar cuantas cifras hay entre uno y otro 
-Cantidac_numeros = abs(numero1 - numero2)
-
-#Si los números son distintos vamos imprimir cúal es mayor y cual es menor:
+#Si (numero1 != numero2) entonces
 if (numero1 != numero2):
+    #Si (numero1 > numero2) entonces
     if (numero1 > numero2):
-        print(f"{numero1} es mayor que {numero2} y entre ellos existen {Cantidac_numeros} números entre ellos.")
+        #Escribe numero1 + " es mayor que " + numero2 + " y entre ellos existen " + contador + " números enteros."
+        print(f"{numero1} es mayor que {numero2} y entre ellos existen {cantidad_numeros} números entre ellos.")
+    #Sino
     else:
-        print(f"{numero1} es menor que {numero2} y entre ellos existen {Cantidac_numeros} números entre ellos.")
+        #Escribe numero1 + " es menor que " + numero2 + " y entre ellos existen " + contador + " números enteros."
+        print(f"{numero1} es menor que {numero2} y entre ellos existen {cantidad_numeros} números entre ellos.")
+#Fin

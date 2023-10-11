@@ -7,3 +7,11 @@ numero_telefono = str(input("Introduce tu número de teléfono, incluyendo el pr
 numero = numero_telefono[4:13]
 
 print(f"Tu numero sin prefijo ni extensión es: {numero}")
+
+"""
+numero = input("introduce un numero con el formato +34-913724710-56")
+contador = numero.split('-')
+if len(numero) == 16 and numero[0] == '+' :
+    if len(contador[1]) == 9 :
+        print(contador[1])
+"""

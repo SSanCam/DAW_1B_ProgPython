@@ -6,3 +6,8 @@ lista_formateada = lista.split(",")
 
 for articulo in lista_formateada:
     print(articulo)
+
+    """
+    lista_compra = "tomate, lechuga, huevos"
+    listaProd = lista_compra.replace(" "," ").replace(',','\n')
+    """

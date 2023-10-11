@@ -7,3 +7,15 @@ nombre_usuario = correo_electronico[:posicion_arroba]
 nueva_extension = nombre_usuario + "@ceu.es"
 
 print(f"Tu nuevo correo electrónico es: {nueva_extension}")
+
+"""
+division = correo.split('@')
+print (f"{division} + @ceu.es")
+
+////////////
+
+print(correo[correo.find("@")] + "@ceu.es")
+//
+mail = correo.find("@")
+print (mail[:pos+1]+"@ceu.es")
+"""
