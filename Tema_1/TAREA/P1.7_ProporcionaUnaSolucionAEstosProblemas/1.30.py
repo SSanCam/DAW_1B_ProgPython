@@ -12,19 +12,20 @@ Inicio
     
     Mientras (numero_inicio <= 0) hacer
         Escribir ("El numero pedido debe ser mayor de 0.")
-        Leer numero
+        Leer numero_inicio
         
     Mientras (numero_total_serie <= 0) hacer
         Escribir ("El numero total de la serie debe ser mayor de 0.")
         Leer numero_total_serie
     
-    Serie = ""
+    Serie = str(numero_inicio)
     contador = numero_total_serie
     
     Si (numero_inicio > 0) y (numero_total_serie > 0) entonces 
         Mientras (contador != 0) hacer
             contador = contador - 1
-            serie = numero + incremento
+            numero_inicio + incremento
+            serie = serie + (numero + incremento)
             
     Escribir serie
 Fin
@@ -52,24 +53,20 @@ while (numero_total_serie <= 0):
     #Leer numero_total_serie
     numero_total_serie = int(input("Introcuce la cantidad de cifras que va a tener tu serie: "))   
     
-numero = numero_inicial
-
+serie = str(numero_inicial) + "-"
 #contador = numero_total_serie
 contador = numero_total_serie
 
 #Si (numero > 0) y (numero_total_serie > 0) entonces
 if (numero_inicial > 0) and (numero_total_serie > 0): 
     #Serie = ""
-    serie = ""
+    
     #Para numero en (numero..numero_total_serie) hacer
     while (contador != 0) : 
-        #serie = numero + incremento
-        
+        #serie = numero + incrementod
         contador -= 1
-        
-        serie =  serie + str(numero_inicial + incremento) + ".."
-             
-    #Escribir serie
-    #print (serie)
+        numero_inicial += incremento
+        serie = "{}-..{}".format(serie, numero_inicial)
+serie = "{}-{}".format(serie, numero_inicial)  # Agregamos el número final al formato correcto
 
 #Fin
