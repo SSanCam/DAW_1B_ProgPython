@@ -76,8 +76,7 @@ if numero_inicio > 0 and numero_total_serie > 0:
         serie = serie + str(numero_inicio) + ".." 
     # Agrega el último número
     ultimo_numero = numero_inicio + incremento
-    #serie = serie + "-" + str(numero_inicio)
-    
+    #serie = serie + ultimo_numero
     serie = serie[:-2] + "-" + str(ultimo_numero)
 
 # Escribir serie
