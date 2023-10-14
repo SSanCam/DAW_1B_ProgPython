@@ -69,7 +69,9 @@ contador = (numero_total_serie - 1)
 if numero_inicio > 0 and numero_total_serie > 0:
     # Mientras (contador != 1) hacer
     while contador != 1:
+        #contador = contador - 1
         contador -= 1
+        #numero_inicio = numero_inicio + incremento
         numero_inicio += incremento
         serie = serie + str(numero_inicio) + ".." 
     # Agrega el último número
