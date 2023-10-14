@@ -25,7 +25,7 @@ Fin"""
 num = 3
 total = int(input("Dime cuantos números debe tener la serie: "))
 
-cont = 1 
+cont = 0
 
 while(cont != total):
     print (num,end=" ")
