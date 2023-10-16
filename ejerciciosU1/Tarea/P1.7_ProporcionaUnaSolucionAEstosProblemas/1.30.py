@@ -66,7 +66,7 @@ while numero_total_serie <= 0:
 
 # Serie = str(numero_inicio)
 serie = str(numero_inicio) + "-"
-# contador = numero_total_serie
+# contador = numero_total_serie - 1
 contador = (numero_total_serie - 1)
 
 # Si (numero_inicio > 0) y (numero_total_serie > 0) entonces
@@ -82,7 +82,7 @@ if numero_inicio > 0 and numero_total_serie > 0:
     ultimo_numero = numero_inicio + incremento
     #serie = serie + ultimo_numero
     serie = serie[:-2] + "-" + str(ultimo_numero)
-    #
+
 # Escribir serie
 print(serie)
 # Fin
