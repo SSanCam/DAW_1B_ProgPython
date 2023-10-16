@@ -1,6 +1,7 @@
 
 #	
-# Ejercicio 1.35 - Pide dos números. Después pide un tercer número del 1 al 4, dependiendo de este número el algoritmo debe hacer lo siguiente:
+# Ejercicio 1.35 - Pide dos números. Después pide un tercer número del 1 al 4, 
+# dependiendo de este número el algoritmo debe hacer lo siguiente:
 #	
 #	- Si no es un número correcto, escribir un mensaje de error.
 #	- Si es un 1, escribir la suma de los dos primeros números.
@@ -47,3 +48,30 @@ Inicio
 				Escribe n1 + " / " + n2 + " = " + (n1/n2)
 	
 Fin"""
+
+print("Introduce dos números: ")
+n1 = int(input)
+n2 = int(input)
+
+opcion = 0
+
+while (opcion < 1 or opcion > 4):
+	print("Introduce una opción (1 = Suma / 2 = Resta / 3 = Multiplicación / 4 = División): ")
+	opcion = int(input)
+	if (opcion < 1 or opcion > 4):
+		print("Error - No es una opción correcta (1-4)")
+	
+if (opcion == 1):
+	print(f"{n1} + {n2} = {n1+n2}")
+ 
+elif (opcion == 2):
+	print(f"{n1} - {n2} = {n1-n2}")
+ 
+elif (opcion == 3): 
+	print(f"{n1} * {n2} = {n1*n2}")
+ 
+elif (opcion == 4):
+	if (n2 == 0):
+		print("La división por cero no es posible")
+	else:
+		print(f"{n1} / {n2} = {n1/n2}")
