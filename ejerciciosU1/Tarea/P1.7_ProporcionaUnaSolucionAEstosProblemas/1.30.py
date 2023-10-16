@@ -11,8 +11,10 @@ El pseudocódigo debes incluirlo como comentarios en el programa de Python."""
 """PSEUDOCÓDIGO
 Inicio
     Lee numero_inicio
+    #numero_inicio = 0
     Lee incremento
     Lee numero_total_serie
+    #numero_total_serie = 0
     
     Mientras (numero_inicio <= 0) hacer
         Escribir ("El numero pedido debe ser mayor de 0.")
@@ -41,24 +43,26 @@ Fin
 # Inicio
 # Lee numero_inicio
 numero_inicio = int(input("Introduce el número con el que comenzará la serie: "))
+#numero_inicio = 0 //PUEDE INICIALIZARSE EN 0 DE FORMA QUE ENTRE DIRECTAMENTE AL BUCLE WHILE Y ME AHORRO EL IMPUT DEL PRINCIPIO
 # Lee incremento
 incremento = int(input("Introduce la cantidad a incrementar en cada número de la serie: "))
+#incremento = 0 //PUEDE INICIALIZARSE EN 0 DE FORMA QUE ENTRE DIRECTAMENTE AL BUCLE WHILE Y ME AHORRO EL IMPUT DEL PRINCIPIO
 # Lee numero_total_serie
 numero_total_serie = int(input("Introduce cuántas cifras tendrá en total tu serie: "))
 
 # Mientras (numero_inicio <= 0) hacer
 while numero_inicio <= 0:
     # Escribir "El número pedido debe ser mayor de 0."
-    print("El número pedido debe ser mayor de 0.")
+    print("El número pedido debe ser mayor de 0: ")
     # Leer numero_inicio
-    numero_inicio = int(input("Introduce el número con el que comenzará la serie: "))
+    numero_inicio = int(input())
 
 # Mientras (numero_total_serie <= 0) hacer
 while numero_total_serie <= 0:
     # Escribir "El número total de la serie debe ser mayor de 0."
-    print("El número total de la serie debe ser mayor de 0.")
+    print("El número total de la serie debe ser mayor de 0: ")
     # Leer numero_total_serie
-    numero_total_serie = int(input("Introduce cuántas cifras tendrá en total tu serie: "))
+    numero_total_serie = int(input())
 
 # Serie = str(numero_inicio)
 serie = str(numero_inicio) + "-"
@@ -78,7 +82,7 @@ if numero_inicio > 0 and numero_total_serie > 0:
     ultimo_numero = numero_inicio + incremento
     #serie = serie + ultimo_numero
     serie = serie[:-2] + "-" + str(ultimo_numero)
-
+    #
 # Escribir serie
 print(serie)
 # Fin

@@ -45,4 +45,4 @@ while (numIni <= numFin):
     print(numIni,end="")
     if (numIni != numFin):
 	    print("-",end="")
-    numIni += 1
+	numIni += 1
