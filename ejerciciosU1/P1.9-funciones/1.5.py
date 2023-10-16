@@ -1,7 +1,7 @@
 """1.5 => recibe el importe del artículo sin iva y el tipo de iva a aplicar, pero no retorna nada, 
 sino que se imprime desde dentro de la función."""
 
-def precio_final () :
+def precio_final() :
     
     precio_articulo = float(input("Cuanto cuesta el articulo?: "))
     iva = float(input("Que porcentaje de IVA debe aplicarse?: "))
