@@ -42,7 +42,7 @@ else:
     numFin = x
 
 while (numIni <= numFin):
-    
+    print(numIni,end="")
     if (numIni != numFin):
-        print(numIni,end="-")
-        numIni += 1  
+	    print("-",end="")
+    numIni += 1
