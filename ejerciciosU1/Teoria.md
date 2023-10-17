@@ -47,7 +47,7 @@ Fin
 
 <hr>
 
-**Estructuras de control secuencial.**
+# **Estructuras de control secuencial.**
 
 ```
 Inicio
@@ -57,9 +57,9 @@ Inicio
 Fin
 ```
 
-**Estructuras de control condicional.**
+# **Estructuras de control condicional.**
 
-*Vamos a utilizar 3 tipos: simple, doble y múltiple.*
+*Vamos a utilizar 3 tipos de condicionales: simple, doble y múltiple.*
 
 <ol>
 <li>Condicional simple:</li>
@@ -113,3 +113,46 @@ Sino
 ```
 
 </ol>
+
+# <u>**Estructuras de control iterativa.**</u>
+
+<ul><li>ESTRUCTURA ITERATIVA <b>MIENTRAS:</b></li></ul>
+
+<p>Iteración con salida al principio (Mientras): primero se evalúa la condición y en caso de cumplirse ejecuta el bloque de instrucciones. Las instrucciones contenidas deben actuar sobre los valores usados en la condición para evitar bucles infinitos.</p>
+
+```
+Mientras (condición) hacer
+    Instrucción1
+    …
+    InstrucciónN
+```
+
+```
+Mientras (cont > 0) hacer
+    Escribe cont
+    cont = cont - 1
+```
+
+<ul><li>ESTRUCTURA ITERATIVA <b>PARA:</b></li></ul>
+<p>Ejecutará el bloque de instrucciones un número determinado de veces. Hace uso de una variable que irá incrementando o decrementando su valor de uno en uno en función de un rango de valores.</p>
+
+```
+Para i en (1…N) hacer
+    Instrucción1
+    …
+    InstrucciónN
+```
+
+```Para i en (N…0) hacer
+    Instrucción1
+    …
+    InstrucciónN
+```
+```
+Inicio
+    suma = 0 
+    Para i en (1…10) hacer
+        suma = suma + 1
+    Escribe “La suma de los primeros 10 números enteros es ” + suma
+Fin
+```
