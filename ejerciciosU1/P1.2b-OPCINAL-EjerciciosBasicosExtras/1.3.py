@@ -27,3 +27,4 @@ print(f"{ancho} * 2 = {operacion4} y es de tipo <class '{type(operacion4)}'> ")
 print(f"{ancho} / {alto} = {operacion5} y es de tipo <class '{type(operacion5)}'> ")
 print(f"{(5 + 1) * 3} = {operacion6} y es de tipo <class '{type(operacion6)}'> ")
 print(f"{(5 + 1) / 3} = {operacion7} y es de tipo <class '{type(operacion7)}'> ")
+
