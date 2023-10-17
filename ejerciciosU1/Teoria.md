@@ -18,9 +18,9 @@ Inicio
         Instrucciones.
     _______________________
     Según (valor) entonces
-        opción1:
+        opción 1:
             Instrucciones.
-        opciónN:
+        opción N:
             Instrucciones.
     _______________________
     Mientras (condición) hacer
