@@ -40,11 +40,23 @@ dias = int(input("Introduce los dias totales que has trabajado: "))
 while (dias < 0 ):
     dias = int(input("ERROR.\nDebes introducir valores positivos, mayores que 0: "))
 
-if (dias > 0):
+if (dias >= 0):
+    #años completos
     anios = dias // 365
+    #meses completos
     meses = (dias % 365) // 30
-    dias = (dias % 365) % 30
+    #dias restantes
+    dias = (dias % 365)  % 30
     
+    if (dias == 30):  
+        meses += 1
+        dias -= 30
+        
+    if (meses == 12):
+        anios += 1
+        meses -= 12
+    
+        
 #Plural / singular segun el numero 
 #dias
 if (dias == 1):
