@@ -9,10 +9,10 @@ Inicio
     Escribe "Introduce un número entero: "
     Lee numero
     
-    Si numero < 0 o numero > 10 entonces
+    Si (numero < 0 o numero > 10) entonces
         Escribe "Error."
     Sino 
-        Si numero % 2 = 0 entonces
+        Si (numero % 2 == 0) entonces
             Escribe "numero es un número par."
         Sino 
             Escribe "numero es un número impar."

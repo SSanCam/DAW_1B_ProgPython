@@ -26,23 +26,25 @@ Escribe un programa en Python que lea una palabra y la encripte:
     > Su palabra encriptada es uS3R893465
 
 """
-palabra_pedida = str(input("Introduce una palabra de 8 letras: "))
+palabra_pedida = str(input("Introduzca una palabra: ")).replace(" ","")
 
-while len(palabra_pedida) != 8:
-    palabra_pedida = str(input("ERROR.\nDebes introducir una palabra de 8 letras: "))
+while len(palabra_pedida) < 8:
+    palabra_pedida = str(input("ERROR.\nDebes introducir una palabra de al menos 8 caracteres: ")).replace(" ","")
     
 #- Consonantes a mayúsculas //PASO TODO A MAYÚSCULAS PARA QUE SEA MÁS FÁCIL CONTROLAR LUEGO LAS DOS VOCALES RESTANTES.
-palabra_pedida.upper()
+palabra = palabra_pedida.upper()
 """
 - La vocal a pasa a ser una @.
 - La vocal e pasa a ser un 3.
 - La vocal i pasa a ser un 1.
 """
-palabra_formateada = (((palabra_pedida.replace("A","@")).replace("E","3")).replace("I","1"))
+palabra = (((palabra.replace("A","@")).replace("E","3")).replace("I","1"))
 
 #- El resto de vocales serán minúsculas.
-palabra_encriptada = (palabra_formateada.replace("O","o")).replace("U","u")
+palabra = (palabra.replace("O","o")).replace("U","u")
 
 #- Si tiene solo 8 letras, añade un * al principio y un # al final.
-if len(palabra_encriptada) == 8 :
-    print(f"Tu palabra encriptada es: *{palabra_encriptada}#")
+if len(palabra) == 8 :
+    palabra = "*" + palabra + "#"
+    
+print(f"Tu palabar encriptada es: {palabra}")

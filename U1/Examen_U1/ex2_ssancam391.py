@@ -52,5 +52,5 @@ else:
         lista = lista + fruta
         fruta = str(input())
         if (fruta != ""):
-            lista = lista + "-"
+            lista = lista + " - "
     print(f"Lista de frutas favoritas => {lista}.")
