@@ -38,7 +38,7 @@ dias = int(input("Introduce los dias totales que has trabajado: "))
 
 #Voy a pedir número de días hasta que tenga un número positivo
 while (dias < 0 ):
-    dias = int(input("ERROR.\nDebes introducir valores positivos, mayores que 0: "))
+    dias = int(input("ERROR.\nDebes introducir valores positivos a partir de 0: "))
 
 if (dias >= 0):
     #años completos
