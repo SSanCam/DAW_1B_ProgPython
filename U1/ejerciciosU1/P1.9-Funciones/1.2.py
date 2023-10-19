@@ -5,4 +5,4 @@ def total(horas: int , coste: float) :
 horas = int(input("Horas de trabajo: "))
 coste = float(input("Coste por hora: "))
 
-print(f"Importe total: {total(horas,coste)}€.")
+print(f"Importe total: {total(horas,coste):.2f}€.")
