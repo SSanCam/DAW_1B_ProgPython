@@ -1,7 +1,8 @@
 """
 Crea un algoritmo en pseudocódigo y pásalo también a un programa en Python que pida los días totales trabajados en la vida laboral y te transforme esos días a años, meses y días.
 
-Para este programa vamos a considerar que todos los años tienen 365 días y todos los meses 30 días.
+Para este programa vamos a considerar que todos los años tienen 360
+ días y todos los meses 30 días.
 
 Debe cumplir lo siguiente:
 
@@ -42,11 +43,14 @@ while (dias < 0 ):
 
 if (dias >= 0):
     #años completos
-    anios = dias // 365
+    anios = dias // 360
+    
     #meses completos
-    meses = (dias % 365) // 30
+    meses = (dias % 360
+    ) // 30
     #dias restantes
-    dias = (dias % 365)  % 30
+    dias = (dias % 360
+    )  % 30
     
     if (dias == 30):  
         meses += 1
