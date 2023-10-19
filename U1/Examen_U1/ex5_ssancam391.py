@@ -35,29 +35,33 @@ Inicio
 Fin
 """
 dias = int(input("Introduce los dias totales que has trabajado: "))
+
 #Voy a pedir número de días hasta que tenga un número positivo
-while (dias <= 0 ):
+while (dias < 0 ):
     dias = int(input("ERROR.\nDebes introducir valores positivos, mayores que 0: "))
 
 if (dias > 0):
-    dias = dias % 30
-    meses = dias // 30
-    anios = (dias % 30) // 12
+    anios = dias // 365
+    meses = (dias % 365) // 30
+    dias = (dias % 365) % 30
     
-#Indico singular si sólo hay un día.
-if (dias <= 1):
-    dia = "día"
+#Plural / singular segun el numero 
+#dias
+if (dias == 1):
+    dia_plusing = "día"
 else:
-    dia = "días"
-#Indico en singular si sólo hay un mes.
-if (meses <= 1):
-    mes = "mes"
-else:
-    mes = "meses"
-#Indico en singular si sólo hay un año.
-if (anios <= 1):
-    annos = "año"
-else:
-    annos = "años"
+    dia_plusing = "días"
     
-print(f"Ha cotizado: {anios} {annos}, {meses} {mes} y {dias} {dia}.")
+#meses
+if (meses == 1):
+    mes_plusing = "mes"
+else:
+    mes_plusing = "meses"
+    
+#año
+if (anios == 1):
+    annos_plusing = "año"
+else:
+    annos_plusing = "años"
+    
+print(f"Ha cotizado {anios} {annos_plusing}, {meses} {mes_plusing} y {dias} {dia_plusing}.")
