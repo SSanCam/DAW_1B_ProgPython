@@ -16,4 +16,5 @@ def precio_final(importe: float, iva: int) :
 
 importe = float(input("Cuanto cuesta el articulo?: "))
 iva = int(input("Que porcentaje de IVA debe aplicarse?: "))
+
 print(precio_final(importe,iva))
