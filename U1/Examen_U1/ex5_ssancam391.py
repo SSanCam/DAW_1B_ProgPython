@@ -44,7 +44,7 @@ while (dias < 0 ):
 if (dias >= 0):
     #años completos
     anios = dias // 360
-    
+
     #meses completos
     meses = (dias % 360
     ) // 30
