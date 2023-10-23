@@ -1,6 +1,10 @@
 import pytest
 from cadenaCaracteres import cadena
 
+"""def test_cadenaCaracteres():
+    assert cadena("aytortilla") == "La contraseña es correcta."
+    assert cadena("aytortilla") == "La contraseña es correcta."
+"""
 @pytest.mark.parametrize(
     "contrasenia, expected",
     [
