@@ -19,11 +19,13 @@ def jueguito ():
         if (cont == numero_pedido):
             suma += cont
             serie = serie + str(cont) + " = " + str(suma) + "\n"
+            fin_serie = "0 + 0 = 0"
             numero_pedido = numero_pedido -1
             cont = 0
             suma = 0
+            serie_completa = serie + fin_serie
             
-    return serie  
+    return serie_completa  
 """_____________________________________________________________________________________________________"""
 
 print(jueguito())
