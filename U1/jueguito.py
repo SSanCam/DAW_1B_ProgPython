@@ -10,19 +10,15 @@ def jueguito ():
     suma = 0
     cont = 0 
     serie = ""
-    num_actual = 0  
-      
     while ( cont < numero_pedido):
         suma = suma + cont
-        serie = serie + str(num_actual) + " + "
+        serie = serie + str(cont) + " + "
         cont += 1
-        num_actual += 1
         
         if (cont == numero_pedido):
             serie = serie + str(cont) + " = " + str(suma) + "\n"
-        continue
-        
-    
+                
     return serie  
+"""_____________________________________________________________________________________________________"""
 
 print(jueguito())
