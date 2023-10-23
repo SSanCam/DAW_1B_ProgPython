@@ -7,22 +7,22 @@ def jueguito ():
     while (numero_pedido < -100 or numero_pedido > 100):
         numero_pedido = int(input("ERROR.\nDebes introducir un numero entre -100 y 100.\nIngresa otro número: "))
     
-    contador = numero_pedido
     suma = 0
     cont = 0 
     serie = ""
-    while (contador != 0):
+    
+    while ( cont < numero_pedido):
+        suma += cont
+        serie = serie + str(cont) + " + "
+        cont += 1
         
-        while ( cont < numero_pedido):
-            suma = suma + cont
-            serie = serie + str(cont) + " + "
-            cont += 1
+        if (cont == numero_pedido):
+            suma += cont
+            serie = serie + str(cont) + " = " + str(suma) + "\n"
+            numero_pedido = numero_pedido -1
+            cont = 0
+            suma = 0
             
-            if (cont == numero_pedido):
-                serie = serie + str(cont) + " = " + str(suma) + "\n"
-                
-    contador -= 1
-                   
     return serie  
 """_____________________________________________________________________________________________________"""
 
