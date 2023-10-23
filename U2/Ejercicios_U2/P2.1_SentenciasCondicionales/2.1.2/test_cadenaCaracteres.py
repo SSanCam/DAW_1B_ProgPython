@@ -13,4 +13,4 @@ from cadenaCaracteres import cadena
     ]
 )
 def test_cadena(contrasenia,expected):
-    assert cadena() == expected
+    assert cadena(contrasenia) == expected 
