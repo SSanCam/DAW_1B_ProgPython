@@ -1,13 +1,13 @@
 """Escribir un programa que pida al usuario dos números y muestre por pantalla su 
 división. Si el divisor es cero el programa debe mostrar un error."""
 
-def operacion_div ():
+def operacion_div (num1, num2):
     
     try:
         
-        print("Vamos a realizar una división.")
+        """print("Vamos a realizar una división.")
         num1 = float(input("Introduce un número: "))
-        num2 = float(input("Introduce otro número: "))
+        num2 = float(input("Introduce otro número: "))"""
         
         op_division = "{:.2f}".format(num1 / num2)
         
