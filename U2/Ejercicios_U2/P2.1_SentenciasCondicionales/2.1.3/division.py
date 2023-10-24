@@ -17,4 +17,3 @@ def operacion_div ():
     except(ZeroDivisionError):
         return "ERROR.\nNo puede dividirse entre 0."
     
-print(operacion_div())
