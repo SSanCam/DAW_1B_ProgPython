@@ -1,9 +1,8 @@
 """1.11 => recibe un número y retorna una cadena de caracteres con el resultado de la función.
 """
-def cadena_caracteres():
+def cadena_caracteres(n):
     
-    n = int(input("Introduce un numero entero: "))
     suma = (n * (n + 1)//2)
     return f"La suma total es de {suma}"
 
-print(cadena_caracteres())
+print(cadena_caracteres(int(input("Introduce un número: "))))

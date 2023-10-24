@@ -5,4 +5,4 @@ def saludo(nombre) :
     saludo = f"Hola, {nombre}!"
     return saludo
 
-print (saludo("Sara"))
+print (saludo(str(input("Introduce tu nombre: "))))
