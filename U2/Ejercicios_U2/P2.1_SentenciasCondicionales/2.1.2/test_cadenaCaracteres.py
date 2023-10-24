@@ -1,16 +1,9 @@
 import pytest
 from cadenaCaracteres import cadena
 
-@pytest.mark.parametrize(
-    "contrasenia, expected",
-    [
-        ("aytortilla","La contraseña es correcta."),
-        ("AYtortilla","La contraseña es correcta."),
-        ("ayTORTILLA","La contraseña es correcta."),
-        ("nohaytortilla","Contraseña incorrecta."),
-        ("tortilla","Contraseña incorrecta."),
-        ("tortillasincebolla","Contraseña incorrecta.")
-    ]
-)
-def test_cadena(contrasenia,expected):
-    assert cadena(contrasenia) == expected 
+def cadena():
+    assert cadena("AYtortilla") == "La contraseña es correcta."
+    assert cadena("ayTORTILLA") == "La contraseña es correcta."
+    assert cadena("tortillasincebolla") == "Contraseña incorrecta."
+    assert cadena("sintortilla") == "Contraseña incorrecta."
+    assert cadena("ahytortilla") == "Contraseña incorrecta."

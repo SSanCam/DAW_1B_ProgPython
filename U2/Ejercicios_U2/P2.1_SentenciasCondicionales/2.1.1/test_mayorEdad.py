@@ -11,5 +11,5 @@ from mayorEdad import edad
     ]
   )
 
-def test_edad (anios, expected):
+def test_edad (expected):
     assert edad() == expected

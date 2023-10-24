@@ -4,10 +4,11 @@ por el usuario coincide con la guardada en la variable sin tener en cuenta mayú
 
 def cadena():
     password = "aytortilla"
-    contrasenia = str(input("Introduce la contraseña que desees usar: "))
+    contrasenia = str(input("Introduce la contraseña: "))
     
     if (contrasenia.lower() == password):
         return "La contraseña es correcta."
     else:
         return "Contraseña incorrecta."
     
+print(cadena())

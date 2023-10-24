@@ -1,8 +1,8 @@
 """1.1 => recibe un nombre y retorna una cadena de caracteres con el resultado.
 
 """
-def saludo() :
-    nombre = str(input("Escribe tu nombre: "))
-    return nombre
+def saludo(nombre) :
+    saludo = f"Hola, {nombre}!"
+    return saludo
 
-print (f"Hola, {saludo()}")
+print (saludo("Sara"))
