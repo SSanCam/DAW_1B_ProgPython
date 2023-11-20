@@ -10,4 +10,9 @@ def cuenta_atras() -> list:
     return lista_reves
     
     
-print(cuenta_atras())
+def main():
+    
+    return print(cuenta_atras())
+    
+if __name__=="__main__":
+    main()
