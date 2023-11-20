@@ -4,8 +4,8 @@
 def cuenta_vocales(palabra: str):
     
     vocales = ['a', 'e', 'i', 'o', 'u']
+    #conteo = {vocal: 0 for vocal in vocales}
     
-    for letras in palabra.lower():
+    for letra in vocales:
+        conteo = palabra.lower().count(vocales)
         
-        for vocal in letras:
-            
