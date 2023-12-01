@@ -7,23 +7,31 @@ def divisa(simbolo: str) -> str :
         
         if (simbolo in divisas):
             return (divisas[simbolo])
-        
-        if (simbolo not in divisas):
-            return 'Esa divisa no la conocemos.'
-        
-        else:
-            raise ValueError ('ERROR - 404')
-        
-    except Exception:
-        print('ERROR - 404')
-        
-        
+
+    except KeyError:
+        return 'ERROR - 404'
         
 def main():
     
-    print('De que divisa quieres ver el simbolo?: ')
-    simbolo_divisa = input().title()
+    dato_correcto = True 
     
+    while dato_correcto:
+        
+        print('De qué divisa quieres ver el símbolo?(No se permiten números): ')
+        simbolo_divisa = input().title()
+        dato_correcto = True
+        
+        try:
+            float(simbolo_divisa)
+            
+        except ValueError:
+            
+            if (simbolo_divisa.strip() == ''):
+                print('Por favor, ingresa un valor no vacío.')
+            else:
+                print('No tenemos ésa divisa en nuestra base de datos.\nInténtelo de nuevo: ')
+
+        
     return print(divisa(simbolo_divisa))
     
 if __name__=="__main__":
